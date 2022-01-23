@@ -50,14 +50,25 @@
                                     @Html.DisplayFor(modelItem => item.Preco)
                                 </td>
                                 <td class="text-center">
-                                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@item.FilmeId">Editar</a> 
-                                    <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.FilmeId">Detalhes</a> 
+                                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@item.FilmeId">Editar</a>
+                                    <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.FilmeId">Detalhes</a>
                                     <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.FilmeId">Excluir</a>
                                 </td>
                             </tr>
                         }
                     </tbody>
                 </table>
+                <div class="clearfix"></div>
+                <ul class="pagination pull-right">
+                    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="#"><a href="#">2</a></li>
+                    <li class="#"><a href="#">3</a></li>
+                    <li class="#"><a href="#">4</a></li>
+                    <li class="#"><a href="#">5</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                </ul>
+
             </div>
         </div>
     </div>
